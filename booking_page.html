@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Page</title>
+  <link rel="stylesheet" href="booking_pages.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  
+  <section class="booking">
+    <div class="overlay"></div>
+    <div class="booking-content">
+      <h2><i class="fa-solid fa-plane-departure"></i> Book Your Adventure</h2>
+      <p>Fill in your details to secure your spot for an unforgettable journey.</p>
+
+      <!-- Updated form with action + method -->
+      <form class="booking-form" action="booking_.php" method="POST">
+        <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="destination"><i class="fa-solid fa-map-marker-alt"></i> Destination</label>
+        <select id="destination" name="destination" required>
+          <option value="">Select a destination</option>
+          <option value="New york">New york</option>
+          <option value="Paris">Paris</option>
+          <option value="Tokyo">Tokyo</option>
+          <option value="Auroras">Auroras</option>
+          <option value="Golden Circle">Golden Circle</option>
+          <option value="Glacier Expedition">Glacier Expedition</option>
+        </select>
+
+        <label for="date"><i class="fa-solid fa-calendar-days"></i> Travel Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="people"><i class="fa-solid fa-users"></i> Number of People</label>
+        <input type="number" id="people" name="people" min="1" max="20" value="1" required>
+
+        <button type="submit" class="btn"><i class="fa-solid fa-check"></i> Confirm Booking</button>
+        
+      </form>
+      
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
